@@ -9,7 +9,7 @@ $lastName = $db -> quote($_POST['lastName']);
 $company = $db -> quote($_POST['company']);
  
 // Insert the values into the database
-$result = $db -> query("INSERT INTO 'customer' ('firstName', 'lastName', 'company') VALUES (' . $firstName . "," . $lastName . "," . $company .')");
+$result = $db -> query("INSERT INTO 'customer' ('firstName', 'lastName', 'company') VALUES (" . $name . "," . $email . "," . $company . ")");
 
 
 
